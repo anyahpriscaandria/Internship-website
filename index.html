@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Guidance System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Internship Guidance & Recommendation Website</h1>
+        <p>Helping students prepare for their future career</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Student Registration</h2>
+
+            <form id="internshipForm">
+
+                <input type="text" placeholder="Full Name" required><br><br>
+
+                <input type="text" placeholder="Field of Study (e.g. Paramedical, Nursing)" required><br><br>
+
+                <select id="career" required>
+                    <option value="">Future Career Goal</option>
+                    <option value="clinical">Clinical Practice</option>
+                    <option value="research">Medical Research</option>
+                    <option value="management">Hospital Management</option>
+                </select><br><br>
+
+                <select id="location" required>
+                    <option value="">Preferred Internship Location</option>
+                    <option value="india">India</option>
+                    <option value="abroad">Abroad</option>
+                </select><br><br>
+
+                <button type="button" onclick="recommendInternship()">
+                    Get Internship Recommendation
+                </button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Recommended Internship</h2>
+            <div id="output"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Internship Guidance Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
